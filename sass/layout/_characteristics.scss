@@ -1,0 +1,38 @@
+.boxes-icons-1 {
+  text-align: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background--buttons);
+  padding: 25px 102.34px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.section--texts--tittles {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.section--texts--text {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color--gray--757575);
+}
+
+.section--texts--list--item {
+  flex-basis: calc((100% - 90px) / 4);
+  /* width: 270px; */
+}
+
+.section--texts--list--item:last-child {
+  margin-right: 0;
+}
+
+.list-texts {
+  padding-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
