@@ -480,6 +480,11 @@ a {
   pointer-events: none;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 .modal-tittle {
   font-family: "Roboto";
   font-style: normal;
