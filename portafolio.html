@@ -20,8 +20,17 @@
   <body>
     <header class="header">
       <div class="container container__header">
-        <a href="./index.html" class="header__logo link">WebStudio</a>
+        <div class="logoyburger">
+          <a href="./index.html" class="header__logo link">WebStudio</a>
+          <div class="burger" data-menu-open="">
+            <svg class="burger-icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </div>
+        </div>
+
         <nav class="main-nav">
+          <a href="./index.html" class="header__logo2 link">WebStudio</a>
           <ul class="list main-nav__list">
             <li class="main-nav__item">
               <a href="./index.html" class="main-nav__link link">Estudio</a>
@@ -38,6 +47,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="list main-nav__list2">
           <li class="main-nav__item2">
             <a href="mailto:info@devstudio.com" class="main-nav__mail link">
@@ -51,7 +61,6 @@
               info@devstudio.com
             </a>
           </li>
-
           <li class="list-nav2-item">
             <a href="tel:+525555296000" class="main-nav__tel link">
               <svg class="main-nav__icon" width="10px" height="16px">
@@ -64,8 +73,71 @@
       </div>
     </header>
 
+    <div class="mobile-menu" data-menu="">
+      <button class="mobile-menu__close" type="button" data-menu-close="">
+        <svg class="mobile-menu__icon" width="19" height="19">
+          <use href="./images/icons.svg#icon-closer"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__navigation list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Estudio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portafolio.html" class="mobile-menu__link current"
+              >Portafolio</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Contactos</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__wrapper">
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__item">
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu__link mobile-menu__link--tel"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__link mobile-menu__link--mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social list">
+            <li class="mobile-menu__item--social">
+              <a class="mobile-menu__link mobile-menu__link--social link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item--social">
+              <a class="mobile-menu__link mobile-menu__link--social link"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item--social">
+              <a class="mobile-menu__link mobile-menu__link--social link"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item--social">
+              <a class="mobile-menu__link mobile-menu__link--social link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <main>
-      <section class="section--buttons">
+      <section class="section">
         <div class="container">
           <ul class="list list-buttons">
             <li class="section--buttons--item">
@@ -115,238 +187,261 @@
           <ul class="list list-briefcase">
             <li class="section--briefcase--list--item">
               <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="./images/tecnoduck.jpg"
-                    alt="sitio-web_tecnoduk"
-                    width="370"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">Tecnoduck</h3>
-                  <p class="section--briefcase--tittle--description">
-                    Sitio-web
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="section--briefcase--list--item">
-              <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/diseño.jpg"
-                    alt="diseño-poster de nueva orleans vs estrella dorada"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">
-                    Póster de Nueva Orleans vs <br />
-                    Estrella Dorada
-                  </h3>
-                  <p class="section--briefcase--tittle--description">Diseño</p>
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="./images/tecnoduck.jpg"
+                      alt="sitio-web_tecnoduk"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">Tecnoduck</h3>
+                    <p class="section--briefcase--tittle--description">
+                      Sitio-web
+                    </p>
+                  </div>
                 </div>
               </a>
             </li>
 
             <li class="section--briefcase--list--item">
               <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/apliciones.jpg"
-                    alt="Apliciones - restaurante Seafood"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">
-                    Restaurante Seafood
-                  </h3>
-                  <p class="section--briefcase--tittle--description">
-                    Aplicaciones
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="section--briefcase--list--item">
-              <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/marketing.jpg"
-                    alt="Marketing-Proyecto Prime"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">Proyecto Prime</h3>
-                  <p class="section--briefcase--tittle--description">
-                    Marketing
-                  </p>
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/diseño.jpg"
+                      alt="diseño-poster de nueva orleans vs estrella dorada"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">
+                      Póster de Nueva Orleans vs <br />
+                      Estrella Dorada
+                    </h3>
+                    <p class="section--briefcase--tittle--description">
+                      Diseño
+                    </p>
+                  </div>
                 </div>
               </a>
             </li>
 
             <li class="section--briefcase--list--item">
               <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/apliciones1.jpg"
-                    alt="Apliciones - Proyecto Cajas"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">Proyecto Cajas</h3>
-                  <p class="section--briefcase--tittle--description">
-                    Aplicaciones
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="section--briefcase--list--item">
-              <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/sitio-web.jpg"
-                    alt="Sitio-web La inspiracion no tiene limites"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">
-                    La inspiración no tiene limites
-                  </h3>
-                  <p class="section--briefcase--tittle--description">
-                    Sitio-web
-                  </p>
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/apliciones.jpg"
+                      alt="Apliciones - restaurante Seafood"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">
+                      Restaurante Seafood
+                    </h3>
+                    <p class="section--briefcase--tittle--description">
+                      Aplicaciones
+                    </p>
+                  </div>
                 </div>
               </a>
             </li>
 
             <li class="section--briefcase--list--item">
               <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/diseño1.jpg"
-                    alt="Sitio-web La inspiracion no tiene limites"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">Edicion Limitada</h3>
-                  <p class="section--briefcase--tittle--description">Diseño</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="section--briefcase--list--item">
-              <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/marketing1.jpg"
-                    alt="Proyecto-LAB"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
-                </div>
-
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">Proyecto LAB</h3>
-                  <p class="section--briefcase--tittle--description">
-                    Marketing
-                  </p>
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/marketing.jpg"
+                      alt="Marketing-Proyecto Prime"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">Proyecto Prime</h3>
+                    <p class="section--briefcase--tittle--description">
+                      Marketing
+                    </p>
+                  </div>
                 </div>
               </a>
             </li>
 
             <li class="section--briefcase--list--item">
               <a href="" class="enlace-briefcase link">
-                <div class="overlay">
-                  <img
-                    src="images/apliaciones2.jpg"
-                    alt="Aplicines - negocio en crecimiento"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="text-overlay">
-                    Tecnoduck es una plataforma de distribución de coronavirus
-                    de última generación. Las compañías usan esta plataforma
-                    para el espionaje digital y los ataques a los servidores
-                    seguros de la competencia.
-                  </p>
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/apliciones1.jpg"
+                      alt="Apliciones - Proyecto Cajas"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">Proyecto Cajas</h3>
+                    <p class="section--briefcase--tittle--description">
+                      Aplicaciones
+                    </p>
+                  </div>
                 </div>
+              </a>
+            </li>
 
-                <div class="information-briefcase">
-                  <h3 class="section--briefcase--tittle">
-                    Negocio en Crecimiento
-                  </h3>
-                  <p class="section--briefcase--tittle--description">
-                    Apliciones
-                  </p>
+            <li class="section--briefcase--list--item">
+              <a href="" class="enlace-briefcase link">
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/sitio-web.jpg"
+                      alt="Sitio-web  - la inspiracion no tiene limites"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">
+                      La inspiracion no tiene limites
+                    </h3>
+                    <p class="section--briefcase--tittle--description">
+                      Sitio-web
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="section--briefcase--list--item">
+              <a href="" class="enlace-briefcase link">
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/diseño1.jpg"
+                      alt="Sitio-web La inspiracion no tiene limites"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">Edicion Limitada</h3>
+                    <p class="section--briefcase--tittle--description">
+                      Diseño
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="section--briefcase--list--item">
+              <a href="" class="enlace-briefcase link">
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/marketing1.jpg"
+                      alt="Proyecto-LAB"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">Proyecto LAB</h3>
+                    <p class="section--briefcase--tittle--description">
+                      Marketing
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="section--briefcase--list--item">
+              <a href="" class="enlace-briefcase link">
+                <div class="product">
+                  <div class="overlay-container product-overlay">
+                    <img
+                      src="images/apliaciones2.jpg"
+                      alt="Aplicines - negocio en crecimiento"
+                      class="img-porta"
+                    />
+                    <div class="overlay">
+                      <p class="text-overlay">
+                        Tecnoduck es una plataforma de distribución de
+                        coronavirus de última generación. Las compañías usan
+                        esta plataforma para el espionaje digital y los ataques
+                        a los servidores seguros de la competencia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="information-briefcase">
+                    <h3 class="section--briefcase--tittle">
+                      Negocio en Crecimiento
+                    </h3>
+                    <p class="section--briefcase--tittle--description">
+                      Apliciones
+                    </p>
+                  </div>
                 </div>
               </a>
             </li>
@@ -448,5 +543,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu-mobile.js"></script>
   </body>
 </html>

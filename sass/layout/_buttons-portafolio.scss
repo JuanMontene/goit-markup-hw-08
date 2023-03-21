@@ -1,36 +1,27 @@
-.section--buttons {
-  padding-top: 106px;
-  padding-bottom: 50px;
-}
-
 .list-buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 50px;
 }
 
-.section--buttons--item {
+.section--buttons--item:not(:last-child) {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 
-.section--buttons--item:last-child {
-  margin-right: 0;
-}
-
 .section--buttons--generally {
+  padding: 6px 22px;
   border: none;
-  background-color: var(--background--buttons);
   border-radius: 4px;
-  font-family: inherit;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  line-height: 1.63;
+  background-color: var(--color-btns-port);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus,
   &:active {
@@ -43,20 +34,21 @@
   }
 }
 
-.btn-todo {
-  padding: 6px 18px;
-}
-
-.btn-sitios {
-  padding: 6px 24px;
-}
-
-.btn-diseño {
-  padding: 6px 26px;
-}
-
 .section--buttons--selected {
   background-color: var(--blue-color);
   color: var(--white--color);
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+}
+
+@media screen and (min-width: 768px) {
+  .list-buttons {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .section--buttons--item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
