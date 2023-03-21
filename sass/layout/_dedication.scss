@@ -1,55 +1,62 @@
 .service--section {
-  padding-top: 5px;
+  display: none;
 }
 
-.service--section--tittle {
-  margin-bottom: 55.05px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+@media screen and (min-width: 1200px) {
+  .service--section {
+    display: block;
+    padding-top: 47px;
+  }
 
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+  .service--section--tittle {
+    margin-bottom: 55.05px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 
-.list-service-section {
-  flex-basis: calc((100% - 60px) / 3);
-}
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-.boxes-images-1 {
-  position: relative;
-}
+  .list-service-section {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 
-.boxes-images-2 {
-  position: relative;
-}
+  .boxes-images-1 {
+    position: relative;
+  }
 
-.boxes-images-3 {
-  position: relative;
-}
+  .boxes-images-2 {
+    position: relative;
+  }
 
-.images-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  bottom: 0;
-  left: 0;
-  color: var(--white--color);
-  background-color: var(--background-div-text-images);
-  padding: 27px 79px;
+  .boxes-images-3 {
+    position: relative;
+  }
+
+  .images-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    color: var(--white--color);
+    background-color: var(--background-div-text-images);
+    padding: 27px 79px;
+  }
 }
